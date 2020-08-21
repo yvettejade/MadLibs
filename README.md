@@ -1,24 +1,21 @@
 # MadLibs
 1. First, have one person in each group, hereafter called the “owner”, Fork the MadLibs project from my GitHub repository.  This creates a totally separate version of the project that will be independent of mine.
 
-2. Then, each other person in the group should fork that person’s project.  This also creates a copy, but it is still owned by the owner.  You can make changes on your cloned code but cannot write to the owners project history without permission.
+2. Then, each other person in the group should fork that person’s project.  This also creates a copy, but it is downstream of the owner they copied it from.  You can make changes on your code but cannot write to the owners project history without permission.
 
-3. The owner must add each coder in the group as collaborators giving them permission to write to the owners project.
+3. Each group member makes one of the changes described in the Java file to that java file.  This will require both changing that Java file and also creating a new txt file, adding it to the repository.
 
-4. Each group member makes one of the changes described in the Java file to that java file.  This will require both changing that Java file and also creating a new txt file, adding it to the repository.
+4. When you make a change, ANY change, you must commit that change, writing a short comment about what the change is.  These “commits” keep a record of every change, and allow undoing of detrimental changes.
 
-5. When you make a change, ANY change, you must commit that change, writing a short comment about what the change is.  These “commits” keep a record of every change, and allow undoing of detrimental changes.
+5. When you are satisfied with your changes, you are ready to add those changes back to the owners code (which everyone in the group is writing code for).  To avoid conflicts you must for see if anyone else added code to the repository.  To do this *you must first pull the latest changes* which other coders added.  If there is a conflict when pulling, see the footnotes. Otherwise, test to make sure your code works, and continue!
 
-6. When you are satisfied with your changes, you are ready to add those changes back to the owners code (which everyone in the group is writing code for).  To avoid conflicts you must for see if anyone else added code to the repository.  To do this *you must first pull the latest changes* which other coders added.  If there is a conflict when pulling, see the footnotes. Otherwise, test to make sure your code works, and continue!
+6. When you are fully satisfied with your changes, you should now push your changes back to the original, by creating a request for the owner to pull into their code (I know, you push code by requesting they pull, what?!?).  The owner must then approve the pull request ASAP and take care of the merge; if there are any merge conflicts, they should be shared and discussed to resolve.
 
-7. When you are fully satisfied with your changes, you should now push your changes back to the original, by creating a request for the owner to pull into their code (I know, you push code by requesting they pull, what?!?).  The owner must then approve the pull request ASAP and take care of the merge; if there are any merge conflicts, they should be shared and discussed to resolve.
+7. After every merged pull request, both the coder and the owner should test to confirm it works!  If it does, great!  If it does not, it should be removed or 'reverted' out of the master branch by the owner and fixed by the coder (following step 7).
 
-8. After every merged pull request, both the coder and the owner should test to confirm it works!  If it does, great!  If it does not, it should be removed or 'reverted' out of the master branch by the owner and fixed by the coder (following step 7).
+8. Now everyone else needs to be updated that there is new working code!  They should pull the changes from the main branch *at their convenience* so that they have an updated copy (see step 7)!
 
-9. Now everyone else needs to be updated that there is new working code!  They should pull the changes from the main branch *at their convenience* so that they have an updated copy (see step 7)!
-
-10. Finally, each person should edit some of the files they *didn’t* create to add stories, nouns, verbs, etc., commit those changes, and submit pull requests so that everyone is able to contribute to whichever files they’d like!
-
+9. Finally, each person should edit some of the files they *didn’t* create to add stories, nouns, verbs, etc., commit those changes, and submit pull requests so that everyone is able to contribute to whichever files they’d like!
 
 
 
