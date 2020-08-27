@@ -8,7 +8,12 @@ public class MadLibs {
 		ArrayList<String> adjs =  new ArrayList<String>();
 		ArrayList<String> advs =  new ArrayList<String>();
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
-		
+		BufferedReader nounReader = new BufferedReader(new FileReader("nouns.txt"));
+ 		while (nounReader.ready()) { 			
+ 			nouns.add(nounReader.readLine());
+ 		}
+		nounReader.close();
+
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
 		FileReader fr = new FileReader("verbs.txt"); 
 		BufferedReader verbBuffer = new BufferedReader(fr);
