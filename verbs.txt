@@ -1,0 +1,6 @@
+run
+stand
+walk
+sit
+yell
+talk
