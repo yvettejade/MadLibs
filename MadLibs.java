@@ -82,13 +82,33 @@ public class MadLibs {
 		String randomAdv = advs.get(advRandom);
 		
 		int nounLoc = story.indexOf("<<NOUN>>");
-		story = story.substring(0, nounLoc) + randomNoun + story.substring(nounLoc + 8);
+		while (nounLoc != -1) {
+			nounRandom = (int)(Math.random()*nouns.size());
+			randomNoun = nouns.get(nounRandom);
+			story = story.substring(0, nounLoc) + randomNoun + story.substring(nounLoc + 8);
+			nounLoc = story.indexOf("<<NOUN>>");
+		}
 		int verbLoc = story.indexOf("<<VERB>>");
-		story = story.substring(0, verbLoc) + randomVerb + story.substring(verbLoc + 8);
+		while (verbLoc != -1) {
+			verbRandom = (int)(Math.random()*verbs.size());
+			randomVerb = verbs.get(verbRandom);
+			story = story.substring(0, verbLoc) + randomVerb + story.substring(verbLoc + 8);
+			verbLoc = story.indexOf("<<VERB>>");
+		}
 		int adjLoc = story.indexOf("<<ADJECTIVE>>");
-		story = story.substring(0, adjLoc) + randomAdj + story.substring(adjLoc + 13);
+		while (adjLoc != -1) {
+			adjRandom = (int)(Math.random()*adjs.size());
+			randomAdj = adjs.get(adjRandom);
+			story = story.substring(0, adjLoc) + randomAdj + story.substring(adjLoc + 13);
+			adjLoc = story.indexOf("<<ADJECTIVE>>");
+		}
 		int advLoc = story.indexOf("<<ADVERB>>");
-		story = story.substring(0, advLoc) + randomAdv + story.substring(advLoc + 10);
+		while (advLoc != -1) {
+			advRandom = (int)(Math.random()*advs.size());
+			randomAdv = advs.get(advRandom);
+			story = story.substring(0, advLoc) + randomAdv + story.substring(advLoc + 10);
+			advLoc = story.indexOf("<<ADVERB>>");
+		}
 
 		System.out.println(story);
 	}

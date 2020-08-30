@@ -1,0 +1,1 @@
+Hi <<NOUN>> I <<VERB>> to the <<ADJECTIVE>> <<ADVERB>> <<NOUN>> <<ADJECTIVE>> <<ADVERB>> <<VERB>> <<VERB>> 
